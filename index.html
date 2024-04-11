@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/normaliza.css" as="style">
+    <link rel="stylesheet" href="css/normaliza.css">
     <title>Matematicas Web</title>
     <link rel="shortcut icon" href="imgs/mat.ico" type="image/x-icon">
+    <link rel="preload" href="css/reinicio.css" as="style">
+    <link rel="stylesheet" href="css/reinicio.css">
+    <link rel="preload" href="css/navegador.css" as="style">
+    <link rel="stylesheet" href="css/navegador.css">
     
     
 </head>
@@ -12,12 +18,18 @@
     <header>
         <h1>Matematicas Web</h1>
     </header>   
-    <nav>
-        <a href="#" onclick="alert('Ya estás en el inicio')">Inicio</a>
-        <a href="OperacionesBasicas.html" >Operaciones básicas</a>
-        <a href="Calculadora.html" >Calculadora</a>
-        <a href="SobreNosotros.html" >Sobre Nosotros</a>
-    </nav>
+    <div class="nav-fondo">
+        <section class="cont-nav">
+            <nav>
+                <a href="#" onclick="alert('Ya estás en el inicio')">Inicio</a>
+                <a href="OperacionesBasicas.html" >Operaciones básicas</a>
+                <a href="Calculadora.html" >Calculadora</a>
+                <a href="SobreNosotros.html" >Sobre Nosotros</a>
+            </nav>
+        </section>
+    </div>
+    
+    
     <main>
         <section>
             <h2>Practica 1</h2>

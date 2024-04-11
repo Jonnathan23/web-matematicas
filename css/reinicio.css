@@ -1,0 +1,15 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    background-image: linear-gradient(to top, #c2dcf7 0%, #73CED0);
+    background-repeat: no-repeat;
+    
+
+}
