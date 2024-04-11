@@ -1,26 +1,10 @@
-html{
-    font-size: 62.5%;
-    box-sizing: border-box;
-    scroll-snap-type: y mandatory;
-}
-*, *::before, *::after{
-    box-sizing: inherit;
-}
-body{
-    font-size: 16px;
-    background-image: linear-gradient(to top, #c2dcf7 0%, #73CED0);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-
+:root{
+    --blanco:#ffff;
+    --primario:#73CED0;
 }
 
 header h1{
     text-align: center;
-}
-:root{
-    --blanco:#ffff;
-    --primario:#73CED0;
 }
 
 .nav-fondo{
@@ -30,4 +14,28 @@ header h1{
 .cont-nav{
     max-width: 120rem;
     margin: 0 auto;
+}
+
+.nav-principal{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 780px) {
+    .nav-principal{
+        flex-direction: row;
+        justify-content: space-between  ;
+    }
+}
+
+.nav-principal a{
+    padding: 1.5rem;
+    color: #212121;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-principal a:hover{
+    background-color: #f4de4f;
+    color: #ffff;
 }
