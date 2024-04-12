@@ -1,84 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="shortcut icon" href="imgs/calcIco.ico" type="image/x-icon">
     <link rel="preload" href="css/normaliza.css" as="style">
     <link rel="stylesheet" href="css/normaliza.css">
     <title>Matematicas Web</title>
-    
+
     <link rel="preload" href="css/reinicio.css" as="style">
     <link rel="stylesheet" href="css/reinicio.css">
     <link rel="preload" href="css/navegador.css" as="style">
     <link rel="stylesheet" href="css/navegador.css">
+    <link rel="preload" href="css/calculadora.css" as="style">
+    <link rel="stylesheet" href="css/calculadora.css">
+
+   
 </head>
+
 <body>
     <header>
         <h1>Matematicas Web</h1>
-    </header>   
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="OperacionesBasicas.html">Operaciones básicas</a>        
-        <a href="SobreNosotros.html">Sobre Nosotros</a>
-    </nav>
+    </header>
+    <div class="nav-fondo">        
+        <nav class="cont-nav nav-principal">
+            <a href="index.html">Inicio</a>
+            <a href="OperacionesBasicas.html" >Operaciones básicas</a>
+            <a href="Calculadora.html" >Calculadora</a>
+            <a href="SobreNosotros.html" >Sobre Nosotros</a>
+        </nav>        
+</div>
     <main>
-        <form action="">
-            <fieldset>
-                <legend>Calculadora</legend>
-                <div>                    
-                    <input type="text" placeholder="Escribe un problema matemático">
-                </div>               
-                
-                <div>
-                    <input type="button" value="9" id="bt9">
+            <h2>Calculadora</h2>
+           
+            <div class="fondo1">
+                <div class="texto">
+                    <input type="text" id="resultado" placeholder="0000000000000000">
+                </div>
+    
+                <div class="fondo2">
+                    <div>
+                        <input type="button" value="1" id="bt1">
+                    </div>
+
+                    <div>
+                        <input type="button" value="2" id="bt2">
+                    </div>
+
+                    <div>
+                        <input type="button" value="3" id="bt3">
+                    </div>
+
+                    <div>
+                        <input type="button" value="+" id="bt+">
+                    </div>
+
+                    <div>
+                        <input type="button" value="4" id="bt4">
+                    </div>
+
+                    <div>
+                        <input type="button" value="5" id="bt5">
+                    </div>
+
+                    <div>
+                        <input type="button" value="6" id="bt6">
+                    </div>
+
+                    <div>
+                        <input type="button" value="-" id="bt-">
+                    </div>
+
+                    <div>
+                        <input type="button" value="7" id="bt7">
+                    </div>
+
+                    <div>
+                        <input type="button" value="8" id="bt8">
+                    </div>
+                    <div>
+                        <input type="button" value="9" id="bt9">
+                    </div>
+                    <div>
+                        <input type="button" value="*" id="btx">
+                    </div>
+                    <div>
+                        <input type="button" value="C" id="btC">
+                    </div>
+                    <div>
+                        <input type="button" value="0" id="bt0">
+                    </div>
+                    <div>
+                        <input type="button" value="=" id="bt=">
+                    </div>
+                    <div>
+                        <input type="button" value="/" id="bt/">
+                    </div>
+
                 </div>
 
-                <div>
-                    <input type="button" value="8" id="bt8">
-                </div>
+            </div>
 
-                <div>
-                    <input type="button" value="7" id="bt7">
-                </div>
-
-                <div>
-                    <input type="button" value="6" id="bt6">
-                </div>
-
-                <div>
-                    <input type="button" value="5" id="bt5">
-                </div>
-
-                <div>
-                    <input type="button" value="4" id="bt4">
-                </div>
-
-                <div>
-                    <input type="button" value="3" id="bt3">                    
-                </div>
-
-                <div>
-                    <input type="button" value="2" id="bt2">
-                </div>
-
-                <div>
-                    <input type="button" value="1" id="bt1">
-                </div>
-
-                <div>
-                    <input type="button" value="0" id="bt0">
-                </div>
-                
-
-            </fieldset>             
-        </form>      
-    </main>    
+    </main>
     <footer>
         <section>
             <p>Práctica 1 10-4-2024</p>
         </section>
-    </footer>    
+    </footer>
+   
+    <script src="Calculadora.js"></script>
+
 </body>
+
 </html>
