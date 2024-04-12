@@ -1,10 +1,5 @@
-:root{
-    --blanco:#ffff;
-    --gris_claro:#9a9f98;
-    --celeste_bajito:#b1dfda;
-    --crema_blanco:#fcfcfa;
-    --rosa_palido: #d7a9b0;
-}
+@import url(colores.css);
+
 main{
     width: 90%;
     background-color:rgba(215, 169, 176, .2);

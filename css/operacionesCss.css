@@ -1,10 +1,11 @@
+@import url(colores.css);
 .cont-img{
     background-image: url(../imgs/operaciones.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 45rem;
     position: relative;
-    margin-bottom: 2rem;
+    
 }
 
 .bienvenida{
@@ -40,6 +41,42 @@
     .bienvenida p{
         font-size: 2.5rem;
     }
+}
+.cont-iconos{
+    display: flex;    
+    flex-direction: column;    
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+@media (min-width: 780px) {
+    .cont-iconos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        overflow: hidden;        
+    }    
+    
+}
+
+.cont-iconos .operaciones{           
+    height: 15rem;
+    width: 15rem;
+    font-weight: bold;
+
+    color: var(--crema_blanco);
+    background-color: var(--rosa_palido);    
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-iconos .operaciones svg{    
+    width: 5rem;    
 }
 
 main{
