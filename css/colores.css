@@ -1,7 +1,7 @@
-:root{
-    --blanco:#ffff;
-    --gris_claro:#9a9f98;
-    --celeste_bajito:#b1dfda;
-    --crema_blanco:#fcfcfa;
+:root {
+    --blanco: rgb(255, 255, 255);
+    --gris_claro: rgb(154, 159, 152);
+    --celeste_bajito: #b1dfda;
+    --crema_blanco: #fcfcfa;
     --rosa_palido: #d7a9b0;
 }
