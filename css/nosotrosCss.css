@@ -4,29 +4,66 @@ body {
     background-color: rgba(154, 159, 152, .2);
 }
 
+/** NAVEGADOR */
+.nav-fondo {
+    margin-top: 0.5rem;
+    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(215, 169, 176, .3);
+}
+
+.nav-principal a:hover {
+    background-color: var(--crema_blanco);
+    color: var(--rosa_palido);
+}
+
 /** IMAGEN PRINCIPAL */
-.img {
+
+.img-fondo {
+    background-image: url(../imgs/ups-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+
+}
+
+.contenedor {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+
+
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: rgba(154, 159, 152, .2);
-    box-shadow: 0px 18px 10px -3px rgba(0, 0, 0, 0.34);
+    justify-content: center;
+
 }
 
-.img img {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    width: 60%;
+.contenedor .img {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media (min-width: 780px) {
-    .img {
-        margin-bottom: auto;
+@media (min-width: 760px) {
+    .contenedor .img {
+        display: flex;
     }
 
-    .img img {
-        width: auto;
+    .contenedor .img img {
+        display: flex;
+        width: 60%;
+
+        background-color: rgba(255, 255, 255, .6);
+        border-radius: 1.5rem;
+
     }
+}
+
+.img h2 {
+    width: 100%;
+    color: var(--blanco);
+    text-align: center;
 }
 
 
@@ -35,8 +72,6 @@ body {
 .contenedor-body {
     width: 86%;
     margin: 2rem auto;
-
-
     border-radius: 1.5rem;
     padding: 1.2rem;
 }
@@ -47,7 +82,7 @@ body {
         margin: 2rem auto;
 
         display: grid;
-        grid-template-columns: 65% 35%;
+        grid-template-columns: 75% 25%;
         grid-template-rows: auto;
 
         border-radius: 1.5rem;
@@ -60,11 +95,22 @@ body {
 main {
     width: 100%;
     margin: auto;
-    background-color: #fff;
     padding: 1rem;
 }
 
-.estudiante {}
+.estudiante {
+    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(215, 169, 176, .7);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.estudiante h2,
+.estudiante p {
+    color: var(--blanco);
+}
 
 /*? ASIDE */
 
@@ -73,8 +119,7 @@ aside {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100%;
-
+    height: 75%;
 
 }
 
@@ -85,18 +130,17 @@ aside section {
     border-radius: 1rem;
     height: 90%;
     margin-top: 2%;
+    color: #fff;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
 
-    box-shadow: 13px 18px 20px -3px rgba(0, 0, 0, 0.53);
+    /*box-shadow: 13px 18px 20px -3px rgba(0, 0, 0, 0.53);*/
 
 }
 
 aside section h5 {
     width: 80%;
+    margin: auto;
+    margin-top: 2rem;
 
     text-align: center;
     border-radius: .8rem;
@@ -105,6 +149,20 @@ aside section h5 {
     background-color: #fff;
     color: var(--gris_claro);
 
+}
+
+aside section ul {
+    list-style: none;
+    text-align: left;
+}
+
+aside section ul a {
+    color: #fff;
+}
+
+aside section p {
+    width: 90%;
+    margin: 1rem auto;
 }
 
 @media (min-width: 480px) {
@@ -116,12 +174,33 @@ aside section h5 {
         margin-top: 0;
     }
 
+    aside section p {
+        display: flex;
+        text-align: justify;
+    }
+
+
+}
+
+@media (min-width: 780px) {
     aside section h5 {
         font-size: 2rem;
     }
+
+    aside section p {
+        font-size: 2rem;
+    }
+
+    aside section ul a {
+        font-size: 2rem;
+
+    }
 }
 
-aside section ul {
-    list-style: none;
-    text-align: left;
+/**  FOOTER */
+
+footer section {
+    color: var(--gris_claro);
+    text-align: center;
+    font-size: 1.5rem;
 }
