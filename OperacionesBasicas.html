@@ -7,50 +7,130 @@
     <link rel="shortcut icon" href="imgs/mat.ico" type="image/x-icon">
     <link rel="preload" href="css/normaliza.css" as="style">
     <link rel="stylesheet" href="css/normaliza.css">
+    <link rel="preload" href="css/reinicio.css" as="style">
+    <link rel="stylesheet" href="css/reinicio.css">
+    <link rel="preload" href="css/navegador.css" as="style">
+    <link rel="stylesheet" href="css/navegador.css">
     <title>Matematicas Web</title>
+    <link rel="preload" href="css/operacionesCss.css" as="style">
+    <link rel="stylesheet" href="css/operacionesCss.css">
+
     
 </head>
 <body>
-    <header>
-        <h1>Matematicas Web</h1>
-    </header>   
-    <nav>
-        <a href="index.html">Inicio</a>        
-        <a href="Calculadora.html">Calculadora</a>
-        <a href="SobreNosotros.html">Sobre Nosotros</a>
-    </nav>
+    <header class="nav-fondo">
+        <div class="titulo">
+            <h1>Matematicas Web</h1>
+        </div>        
+        <nav class="cont-nav nav-principal">
+            <a href="index.html">Inicio</a>        
+            <a href="Calculadora.html">Calculadora</a>
+            <a href="SobreNosotros.html">Sobre Nosotros</a>
+        </nav>
+    </header>
+
+    <div class="cont-img">
+        <section class="bienvenida">
+            <h2>Bienvenido</h2>
+            <p>Aqui verás un resumen acerca de las principales operaciones matemáticas</p>
+        </section>
+    </div>
+
+    <div class="cont-iconos">
+        <div class="cont-i">
+            <section class="operaciones"><!--? Suma -->            
+                <div class="iconos"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fcfcfa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 5l0 14" />
+                        <path d="M5 12l14 0" />
+                      </svg>
+                </div>
+                <h3>Suma</h3>
+            </section>
+            
+    
+            <section class="operaciones"><!--? Resta -->            
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fcfcfa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 12l14 0" />
+                      </svg>
+                </div>
+                <h3>Resta</h3>
+            </section>
+    
+            <section class="operaciones"><!--? Multiplicacion -->            
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-subscript" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fcfcfa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 7l8 10m-8 0l8 -10" />
+                        <path d="M21 20h-4l3.5 -4a1.73 1.73 0 0 0 -3.5 -2" />
+                      </svg>
+                </div>
+                <h3>Multiplicación</h3>
+            </section>
+    
+            <section class="operaciones"><!--? División -->            
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-divide" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fcfcfa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="6" r="1" fill="currentColor" />
+                        <circle cx="12" cy="18" r="1" fill="currentColor" />
+                        <path d="M5 12l14 0" />
+                    </svg>
+                </div>
+                <h3>División</h3>
+            </section>   
+        </div>
+               
+    </div>    
+    
+    
     <main>
-        <section>
-            <h2>Suma</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repellat eos saepe expedita officia soluta consectetur. Fuga assumenda esse aut rem illo, vero rerum sit dolorum tempora et recusandae repudiandae.</p>
-            <section>
+        <section class="mate">
+            <section class="materia">
+                <h2>Suma</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repellat eos saepe expedita officia soluta consectetur. Fuga assumenda esse aut rem illo, vero rerum sit dolorum tempora et recusandae repudiandae.</p>            
+            </section>
+            
+            <section class="ejemplo">
                 <h4>Ejemplo:</h4>                
                 <img src="#" alt="Suma, ejemplo de calculadora">
             </section>
         </section>
 
-        <section>
-            <h2>Resta</h2>
+        <section class="mate">
+            <section class="materia">
+                <h2>Resta</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis ratione repellat veritatis omnis architecto obcaecati officia facere odio nulla temporibus quia sunt eaque ad, veniam suscipit. Deleniti, repellat debitis.</p>
-            <section>
+            </section>
+            
+            <section class="ejemplo">
                 <h4>Ejemplo:</h4>                
                 <img src="#" alt="Resta, ejemplo de calculadora">
             </section>
         </section>
 
-        <section>
-            <h2>Multiplicación</h2>
+        <section class="mate">
+            <section class="materia">
+                <h2>Multiplicación</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quibusdam quos maxime nobis, sit repellat sapiente voluptas dolore, fugiat quasi tempore magnam cum sint praesentium assumenda odit. Neque, ex error?</p>
-            <section>
+            </section>
+            
+            <section class="ejemplo">
                 <h4>Ejemplo:</h4>                
                 <img src="#" alt="Multiplicación, ejemplo de calculadora">
             </section>
         </section>
 
-        <section>
-            <h2>División</h2>
+        <section class="mate">
+            <section class="materia">
+                <h2>División</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloribus excepturi natus quo cupiditate totam harum in ipsum corporis unde voluptatum molestias, ab nobis consectetur reprehenderit, repudiandae eaque accusantium nulla.</p>
-            <section>
+            </section>
+
+            <section class="ejemplo">
                 <h4>Ejemplo:</h4>                
                 <img src="#" alt="División, ejemplo de calculadora">
             </section>

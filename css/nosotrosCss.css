@@ -1,0 +1,127 @@
+@import url(colores.css);
+
+body {
+    background-color: rgba(154, 159, 152, .2);
+}
+
+/** IMAGEN PRINCIPAL */
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(154, 159, 152, .2);
+    box-shadow: 0px 18px 10px -3px rgba(0, 0, 0, 0.34);
+}
+
+.img img {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 60%;
+}
+
+@media (min-width: 780px) {
+    .img {
+        margin-bottom: auto;
+    }
+
+    .img img {
+        width: auto;
+    }
+}
+
+
+
+/** CONTENEDOR BODY */
+.contenedor-body {
+    width: 86%;
+    margin: 2rem auto;
+
+
+    border-radius: 1.5rem;
+    padding: 1.2rem;
+}
+
+@media (min-width: 480px) {
+    .contenedor-body {
+        width: 96%;
+        margin: 2rem auto;
+
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: auto;
+
+        border-radius: 1.5rem;
+    }
+}
+
+
+/*? MAIN */
+
+main {
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.estudiante {}
+
+/*? ASIDE */
+
+aside {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+
+
+}
+
+aside section {
+    width: 90%;
+    background-color: var(--celeste_bajito);
+    padding: .5rem;
+    border-radius: 1rem;
+    height: 90%;
+    margin-top: 2%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    box-shadow: 13px 18px 20px -3px rgba(0, 0, 0, 0.53);
+
+}
+
+aside section h5 {
+    width: 80%;
+
+    text-align: center;
+    border-radius: .8rem;
+    padding: .5rem;
+
+    background-color: #fff;
+    color: var(--gris_claro);
+
+}
+
+@media (min-width: 480px) {
+    aside {
+        justify-content: end;
+    }
+
+    aside section {
+        margin-top: 0;
+    }
+
+    aside section h5 {
+        font-size: 2rem;
+    }
+}
+
+aside section ul {
+    list-style: none;
+    text-align: left;
+}

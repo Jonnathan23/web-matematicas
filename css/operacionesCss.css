@@ -1,0 +1,177 @@
+@import url(colores.css);
+/** CONTENEDOR DE LA IMAGEN */
+.cont-img{
+    background-image: url(../imgs/operaciones.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+    
+}
+
+.bienvenida{
+    background-color: rgba(33, 33, 33, .5);
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bienvenida h2,
+.bienvenida p{
+    color: var(--blanco);
+    width: 60%;
+    text-align: center;
+}
+
+@media (min-width: 780px) {
+    .bienvenida h2,
+    .bienvenida p{
+        width: auto;        
+    }
+
+    .bienvenida h2{
+        font-size: 3.5rem;
+    }
+
+    .bienvenida p{
+        font-size: 2.5rem;
+    }
+}
+
+/** Barra de Iconos */
+
+.cont-iconos{    
+    margin-bottom: 2rem;    
+    height: 17rem;
+}
+.cont-i{
+    display: flex;    
+    flex-direction: column;    
+    align-items: center;
+    padding: 1rem;
+    
+    background-color: var(--celeste_bajito);
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    
+}
+
+@media (min-width: 480px) {
+    .cont-iconos .cont-i{                               
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;        
+        align-items:first baseline;    
+        overflow: visible;
+    }    
+    
+}
+
+.cont-i .operaciones{           
+    height: 14rem;
+    width: 17rem;
+    font-weight: bold;
+
+    color: var(--crema_blanco);
+    background-color: var(--celeste_bajito);    
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cont-iconos .operaciones svg{    
+    width: 5rem;    
+}
+
+/** Marteia Operaciones basicas*/
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+main .mate{
+    border: 0.2rem solid var(--gris_claro);
+    border-radius: .5rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    box-shadow: 12px 10px 14px 0px rgba(154,159,152,0.64);
+
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+/*? Contido de Materia*/
+main .materia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+main .materia h2{
+    color: var(--blanco);
+    background-color: var(--gris_claro);
+    width: 90%;
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 780px) {
+    main .materia h2{        
+        font-size: 2.3rem;
+        text-align: left;
+        padding-left: 5%;
+        
+    }
+}
+
+main .materia p{
+    width: 95%;
+    color: var(--gris_claro);
+    text-align: justify;
+    background-color: rgba(154, 159, 152, .051);
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: 3px 3px 28px 0px rgba(154,159,152,.1);
+}
+
+
+/*? Ejemplo*/
+main .ejemplo{
+    display: flex;
+    flex-direction: column;    
+    align-items:flex-start;
+}
+
+main .ejemplo h4{
+    color: var(--gris_claro);
+    font-weight: bold;
+    width: 90%;
+    padding-left: 5%;    
+}
+
+main .ejemplo img{
+    cursor: pointer;
+}
+
+/**  FOOTER */
+
+footer section{
+    color: var(--gris_claro);
+    text-align: center;
+    font-size: 1.5rem; 
+}
