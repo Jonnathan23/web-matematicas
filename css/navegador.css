@@ -8,11 +8,11 @@
 
 header h1{
     text-align: center;
-    color: var(--crema_blanco);
+    color: var(--gris_claro);
 }
 
 .nav-fondo{
-    background-color: var(--blanco);
+    background-color: var(--rosa_palido);
     box-shadow: 0px 11px 9px 2px rgba(33,33,33,0.19);
 
 }
@@ -36,7 +36,7 @@ header h1{
 
 .nav-principal a{
     padding: 1.5rem;
-    color: var(--gris_claro);
+    color: var(--blanco);
     text-decoration: none;
     font-weight: bold;
 }
