@@ -146,7 +146,11 @@ main .materia h2 {
     font-size: 2rem;
     text-align: center;
 }
-
+main .materia h3{
+    color: rgba(44, 44, 44, 0.64);
+    width: 90%;
+    text-align: left;
+}
 @media (min-width: 780px) {
     main .materia h2 {
         font-size: 2.3rem;
@@ -210,9 +214,6 @@ main .ejemplo .img-ej.mostrar {
     }
 }
 
-
-
-
 main .ejemplo img {
     cursor: pointer;
     height: 25rem;
@@ -224,10 +225,3 @@ main .ejemplo img {
     }
 }
 
-/**  FOOTER */
-
-footer section {
-    color: var(--gris_claro);
-    text-align: center;
-    font-size: 1.5rem;
-}

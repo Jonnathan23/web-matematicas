@@ -197,10 +197,3 @@ aside section p {
     }
 }
 
-/**  FOOTER */
-
-footer section {
-    color: var(--gris_claro);
-    text-align: center;
-    font-size: 1.5rem;
-}
