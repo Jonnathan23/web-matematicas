@@ -11,18 +11,26 @@ footer {
 .contactos {
     display: flex;
     flex-direction: column;
+    color: var(--crema_blanco);
 
 }
 
-@media (min-width: 760px) {
+@media (min-width: 480px) {
 
     .contactos {
-        color: var(--crema_blanco);
         display: grid;
         grid-template-columns: 50% 50%;
 
     }
 
+}
+
+@media (min-width: 782px) {
+    .contactos .contac-div {
+        width: 60%;
+        margin: auto;
+
+    }
 }
 
 .imagen-footer {
