@@ -146,11 +146,13 @@ main .materia h2 {
     font-size: 2rem;
     text-align: center;
 }
-main .materia h3{
+
+main .materia h3 {
     color: rgba(44, 44, 44, 0.64);
     width: 90%;
     text-align: left;
 }
+
 @media (min-width: 780px) {
     main .materia h2 {
         font-size: 2.3rem;
@@ -171,12 +173,14 @@ main .materia p {
 }
 
 
+
 /*? Ejemplo*/
 main .ejemplo {
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+
 }
 
 main .ejemplo h4 {
@@ -187,18 +191,37 @@ main .ejemplo h4 {
     text-align: left;
 }
 
+main .ejemplo .click {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    color: var(--gris_claro);
+
+    display: flex;
+    align-items: flex-start;
+
+}
+
+main .ejemplo .click.ocultar {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    height: 1rem;
+    transition: opacity 0.25s ease;
+}
+
+
+
 main .ejemplo .img-ej {
     opacity: 0;
     transition: opacity 0.75s ease;
     height: 5rem;
-    transition: height 0.5s ease;
+    transition: height 0.65s ease;
 }
 
 main .ejemplo .img-ej.mostrar {
     opacity: 1;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.75s ease;
     height: 25rem;
-    transition: height 0.5s ease;
+    transition: height 0.65s ease;
 }
 
 @media (min-width: 460px) {
@@ -224,4 +247,3 @@ main .ejemplo img {
         height: 30rem;
     }
 }
-

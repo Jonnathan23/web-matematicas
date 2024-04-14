@@ -1,7 +1,14 @@
 :root {
     --blanco: rgb(255, 255, 255);
     --gris_claro: rgb(154, 159, 152);
+    --celeste_bajito: rgb(177, 223, 218);
+    --crema_blanco: rgb(252, 252, 250);
+    --rosa_palido: rgb(215, 169, 176);
+    /*
+    --blanco: #ffffff;
+    --gris_claro: #9a9f98;
     --celeste_bajito: #b1dfda;
     --crema_blanco: #fcfcfa;
-    --rosa_palido: rgb(215, 169, 176);
+    --rosa_palido: #d7a9b0;
+*/
 }
