@@ -23,15 +23,14 @@ footer {
 
     }
 
-}
-
-@media (min-width: 782px) {
     .contactos .contac-div {
         width: 60%;
         margin: auto;
 
     }
+
 }
+
 
 .imagen-footer {
     display: flex;
